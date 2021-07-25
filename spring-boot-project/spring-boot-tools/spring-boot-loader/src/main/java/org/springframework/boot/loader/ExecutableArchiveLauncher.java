@@ -53,6 +53,7 @@ public abstract class ExecutableArchiveLauncher extends Launcher {
 
 	@Override
 	protected String getMainClass() throws Exception {
+		// 获得启动的类的全名
 		Manifest manifest = this.archive.getManifest();
 		String mainClass = null;
 		if (manifest != null) {
